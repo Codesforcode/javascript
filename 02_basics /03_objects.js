@@ -11,11 +11,22 @@ const obj ={
 // console.log(typeof mySym);
 
 
-obj.greeting = function(){
-    console.log("Hello");
+// obj.greeting = function(){
+//     console.log("Hello");
     
+// }
+// console.log(obj.greeting());
+// console.log(`Hello My name is ${obj.name} and my age is ${obj.age} ,my email is ${obj.Email}`);
+
+// Object.freeze(obj);
+obj.Email= "Ajasg@yahoo.com"
+// console.log(obj);
+obj.greetings = function(){
+    console.log(`hello ${this.name}`)
 }
-console.log(obj.greeting());
-console.log(`Hello My name is ${obj.name} and my age is ${obj.age} ,my email is ${obj.Email}`);
+console.log(obj.greetings());
+
+// console.log(obj["greetings()"]);
+
 
 
